@@ -1,0 +1,36 @@
+{
+  "env": {
+    "production": {
+      "presets": [
+        ["@emotion/babel-preset-css-prop",
+          {
+            "autoLabel": false,
+            "sourceMap": false
+          }
+        ]
+      ],
+      "plugins": [
+        "transform-remove-console"
+      ]
+    },
+    "development": {
+      "presets": [
+        ["@emotion/babel-preset-css-prop",
+          {
+            "autoLabel": true,
+            "sourceMap": true
+          }
+        ]
+      ]
+    }
+  },
+  "presets": [
+    ["@babel/env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"],
+        "node": "6.10"
+      }
+    }],
+    "next/babel"
+  ]
+}

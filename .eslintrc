@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "process": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "semi": ["error", "never"],
+    "indent": ["error", 2, {
+      "SwitchCase": 1
+    }],
+    "no-regex-spaces": "error",
+    "no-multi-spaces": "error",
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
+    "block-spacing": "error",
+    "func-call-spacing": ["error", "never"],
+    "no-trailing-spaces": "error",
+    "space-before-blocks": "error",
+    "spaced-comment": ["error", "always"],
+    "keyword-spacing": ["error", {
+      "before": true,
+      "after": true
+    }]
+  },
+  "plugins": ["prettier", "react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

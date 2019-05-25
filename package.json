@@ -1,0 +1,42 @@
+{
+  "name": "dtcreact-nextjs",
+  "version": "0.0.1",
+  "description": "Starter Project",
+  "main": "server/index.js",
+  "repository": "https://github.com/dtc-oss/dtcreact-nextjs.git",
+  "author": "engineering.dtc.co.id",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server/index.js",
+    "build": "next build",
+    "start:beta": "NODE_ENV=production NODE_SERVER=beta node server/index.js",
+    "start": "NODE_ENV=production node server/index.js",
+    "lint:code": "eslint --ignore-path .gitignore --ext .js,.jsx .",
+    "format:code": "eslint --fix --ignore-path .gitignore --ext .js,.jsx ."
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.11",
+    "emotion-theming": "^10.0.10",
+    "express": "^4.17.0",
+    "next": "^8.1.0",
+    "next-seo": "^1.11.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.9",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "dotenv-webpack": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "nodemon": "^1.19.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1"
+  }
+}
